@@ -30,9 +30,7 @@ class NotificationReminder extends Reminder {
 class AlarmReminder extends Reminder {
   trigger() {
     const alarmSound = document.getElementById('alarmSound');
-    if (alarmSound) {
-      alarmSound.play();
-    }
+    alarmSound.play();
   }
 }
 
@@ -51,7 +49,6 @@ class TaskManager {
     this.tasks = JSON.parse(localStorage.getItem('tasks')) || [];
     this.taskListElement = document.getElementById('taskList');
     this.renderAllTasks();
-    this.scheduleAllReminders(); // Schedule reminders for existing tasks
   }
 
   addTask() {
@@ -101,7 +98,7 @@ class TaskManager {
   }
 
   editTask(taskId) {
-    const task = this.tasks.find(t => t.id == taskId); // Use == to compare
+    const task = this.tasks.find(t => t.id === taskId);
     const newTitle = prompt('Ubah nama tugas:', task.title);
     if (newTitle) {
       task.title = newTitle;
@@ -112,7 +109,7 @@ class TaskManager {
   }
 
   deleteTask(taskId) {
-    this.tasks = this.tasks.filter(t => t.id != taskId); // Use != to compare
+    this.tasks = this.tasks.filter(t => t.id !== taskId);
     this.saveTasks();
     const taskElement = document.getElementById(taskId);
     this.taskListElement.removeChild(taskElement);
@@ -133,10 +130,6 @@ class TaskManager {
     }
   }
 
-  scheduleAllReminders() {
-    this.tasks.forEach(task => this.scheduleReminders(task)); // Schedule reminders for all tasks
-  }
-
   saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
@@ -146,6 +139,4 @@ class TaskManager {
 const taskManager = new TaskManager();
 
 // Meminta izin notifikasi
-if (Notification.permission !== 'denied ') {
-  Notification.requestPermission();
-}
+Notification.requestPermission();
