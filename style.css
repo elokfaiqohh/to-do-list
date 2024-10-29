@@ -113,8 +113,8 @@ li {
   }
 
     .todo-container {
-      max-width: 300px;
-      min-width: 270px;
+      /* max-width: 300px; */
+      min-width: 300px;
       margin: 3rem 0;
       padding: 3rem 1rem;
       border-radius: 8px;
