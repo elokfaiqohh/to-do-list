@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.todo-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 3rem 20rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #3C6E71;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35rem;
+}
+
+input,
+button{
+    width: 100%;
+    padding: 17px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 3px solid #284B63;
+    box-shadow: 0px 7px 15px 0px #d9d9d95c;
+    font-family: "Open Sans", sans-serif;
+}
+
+button{
+    cursor: pointer;
+    background: #1d342b;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: #162921;
+}
+
+/* #taskList{
+    max-height: 200px;
+    overflow-y: auto;
+} */
+
+#taskList li{
+    background: transparent;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-info {
+  flex-grow: 1;
+}
+
+#taskList img{
+    width: 15px;
+}
+
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #1d342b;
+    font-size: 12px;
+    border: 1px solid #162921;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease-in-out;
+  }
+
+.swal-button:not([disabled]):hover {
+    background-color: #162921;
+}
