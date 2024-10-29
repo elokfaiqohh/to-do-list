@@ -20,7 +20,7 @@ h1 {
   margin: 3rem auto;
   padding: 3rem 20rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 15px #244a4d;
   /* background: #3C6E71; */
   background: linear-gradient(179deg, #244a4d, #3C6E71);
   display: flex;
@@ -117,9 +117,6 @@ li {
       min-width: 300px;
       margin: 3rem 0;
       padding: 3rem 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      background: linear-gradient(179deg, #244a4d, #3C6E71);
       width: 70%;
     }
 
