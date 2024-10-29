@@ -19,7 +19,7 @@ class NotificationReminder extends Reminder {
       if (Notification.permission === 'granted') {
           new Notification('Pengingat Tugas!', {
               body: `Segera kerjakan: ${this.taskTitle}`,
-              icon: 'https://via.placeholder.com/100',
+              icon: 'images/notifikasi.png',
               tag: 'to-do-reminder'
           });
       } else {
