@@ -111,6 +111,7 @@ li {
      body{
 
     } 
+
     .todo-container {
         max-width: 350px;
         margin: 3rem auto;
@@ -120,4 +121,12 @@ li {
         background: linear-gradient(179deg, #244a4d, #3C6E71);
         width: 100%;
       }
+
+    .task-info{
+      font-size:15px;
+    }
+
+    h1{
+      font-size: 30px;
+    }
 } 
