@@ -108,9 +108,10 @@ li {
 }
 
 @media screen and (max-width: 450px){
-     body{
+  input, button{
+    padding: 17px 5px;
+  }
 
-    } 
     .todo-container {
       max-width: 300px;
       min-width: 270px;
