@@ -113,13 +113,14 @@ li {
     } 
 
     .todo-container {
-        max-width: 270px;
+        max-width: 260px;
+        min-width: 200px;
         margin: 3rem 0;
         padding: 3rem 1rem;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         background: linear-gradient(179deg, #244a4d, #3C6E71);
-        width: 100%;
+        width: 70%;
       }
 
     .task-info{
