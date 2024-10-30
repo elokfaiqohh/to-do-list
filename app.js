@@ -86,6 +86,15 @@ class Reminder {
         return;
       }
   
+      const taskTime = new Date(timeInput.value);
+      const now = new Date();
+  
+      // Cek apakah waktu yang diatur sudah lewat
+      if (taskTime <= now) {
+        swal("Waktu yang diatur sudah lewat! Silakan pilih waktu yang valid.");
+        return;
+      }
+  
       // Mengonversi waktu ke UTC
       // const localDate = new Date(timeInput.value);
       // const utcDate = new Date(localDate.getTime() + (localDate.getTimezoneOffset() * 60000)); // Mengonversi ke UTC
